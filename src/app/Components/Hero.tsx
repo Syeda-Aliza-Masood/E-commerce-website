@@ -1,5 +1,6 @@
 "use client"; // Ensures this is a Client Component
 
+import Image from 'next/image';
 import { useRouter } from 'next/navigation'; // Use the correct import for client-side navigation
 
 const Hero = () => {
@@ -35,7 +36,7 @@ const Hero = () => {
 
         {/* Right Image - Increased Size with Rounded Corners */}
         <div className="mt-10 lg:mt-0">
-          <img
+          <Image
             src="/2.png"
             alt="Hero Illustration"
             className="w-[600px] h-auto mx-auto rounded-xl"
