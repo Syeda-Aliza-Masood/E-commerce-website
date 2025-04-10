@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Navbar from '@/app/Components/Navbar';
 import Footer from '@/app/Components/Footer';
-import Image from 'next/image';
 
 // Category images mapping
 const categoryImages: Record<string, string> = {
@@ -43,7 +42,7 @@ export default function CatalogPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* All Categories Card */}
               <div className="relative group overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition duration-300 h-80">
-                <Image 
+                <img 
                   src={categoryImages.all} 
                   alt="All Categories"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"

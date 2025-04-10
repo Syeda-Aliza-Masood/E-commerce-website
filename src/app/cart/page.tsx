@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import Navbar from "@/app/Components/Navbar";
 import Footer from "@/app/Components/Footer";
 import { useRouter } from "next/navigation"; // Correct import for client-side navigation
-import Image from "next/image";
 
 const CartPage = () => {
   const [cart, setCart] = useState<any[]>([]);
@@ -43,7 +42,7 @@ const CartPage = () => {
                 className="flex justify-between items-center mb-4 p-4 border-b border-gray-300"
               >
                 <div className="flex items-center">
-                  <Image
+                  <img
                     src={product.image}
                     alt={product.name}
                     className="w-20 h-20 object-contain mr-4"

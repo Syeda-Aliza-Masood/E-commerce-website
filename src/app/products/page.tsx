@@ -1,5 +1,4 @@
 "use client";
-import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import Navbar from "@/app/Components/Navbar"
@@ -98,7 +97,7 @@ const ProductsPage = () => {
             >
               <Link href={`/products/${product.id}`}>
                 <div className="aspect-square bg-gray-50 flex items-center justify-center p-4">
-                  <Image
+                  <img
                     src={product.image}
                     alt={product.name}
                     className="object-contain h-full w-full"

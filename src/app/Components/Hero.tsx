@@ -36,11 +36,13 @@ const Hero = () => {
 
         {/* Right Image - Increased Size with Rounded Corners */}
         <div className="mt-10 lg:mt-0">
-          <Image
-            src="/2.png"
-            alt="Hero Illustration"
-            className="w-[600px] h-auto mx-auto rounded-xl"
-          />
+        <Image
+  src="/2.png"
+  alt="Hero Illustration"
+  width={600}
+  height={400}
+  className="w-[600px] h-auto mx-auto rounded-xl"
+/>
         </div>
       </div>
     </section>

@@ -4,7 +4,6 @@ import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import Navbar from '@/app/Components/Navbar';
 import Footer from '@/app/Components/Footer';
-import Image from 'next/image';
 
 interface Product {
   id: number;
@@ -129,7 +128,7 @@ export default function CategoryPage() {
                 <Link href={`/products/${product.id}`}>
                   <div className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow duration-200 h-full flex flex-col">
                     <div className="aspect-square bg-gray-50 flex items-center justify-center p-4">
-                      <Image 
+                      <img 
                         src={product.image} 
                         alt={product.title} 
                         className="object-contain h-full w-full mix-blend-multiply group-hover:scale-105 transition-transform duration-200"
